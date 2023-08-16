@@ -90,11 +90,11 @@ class Scan_UI(wx.Frame):
         self.path_tc = wx.TextCtrl(self.toolbar1, size = (250, wx.DefaultSize[1]))
         self.toolbar1.AddControl(self.path_tc, label = "Path to scan")
         
-        browse_tool = self.toolbar1.AddTool(wx.ID_ANY, "Browse", wx.Bitmap('button.png'), shortHelp = "Browse")
+        browse_tool = self.toolbar1.AddTool(wx.ID_ANY, "Browse", wx.Bitmap('folder.png'), shortHelp = "Browse")
         self.Bind(wx.EVT_TOOL, self.OnBrowseButtonClicked, browse_tool)
         self.toolbar1.AddSeparator()
 
-        scan_tool = self.toolbar1.AddTool(wx.ID_ANY, "Scan", wx.Bitmap('button.png'), shortHelp = "Scan")
+        scan_tool = self.toolbar1.AddTool(wx.ID_ANY, "Scan", wx.Bitmap('search.png'), shortHelp = "Scan")
         self.Bind(wx.EVT_TOOL, self.OnScanButtonClicked, scan_tool)
 
         self.toolbar1.AddSeparator()
